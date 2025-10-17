@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Отчет анализа МРТ</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
+  h1, h2 { margin: 12px 0; }
+  .grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 16px; }
+  .imgs img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; max-width: 800px; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid #eee; text-align: left; }
+  th { background: #fafafa; }
+</style>
+</head>
+<body>
+  <h1>Отчет анализа МРТ</h1>
+  <div class="grid imgs">
+    <div>
+      <h2>Срезы (исходные)</h2>
+      <img src="montage_raw_axial.png" alt="Исходные" />
+    </div>
+    <div>
+      <h2>Маска мозга</h2>
+      <img src="montage_mask_axial.png" alt="Маска" />
+    </div>
+    <div>
+      <h2>Сегментация тканей</h2>
+      <img src="montage_seg_axial.png" alt="Сегментация" />
+    </div>
+  </div>
+
+  <h2>Метрики</h2>
+  <table>
+    <thead><tr><th>Показатель</th><th>Значение</th></tr></thead>
+    <tbody>
+      <tr><td>dimensions_xyz_vox</td><td>[128, 128, 64]</td></tr>
+<tr><td>spacing_xyz_mm</td><td>[1.0, 1.0, 1.0]</td></tr>
+<tr><td>voxel_volume_ml</td><td>0.00</td></tr>
+<tr><td>num_voxels_total</td><td>1048576.00</td></tr>
+<tr><td>num_voxels_brain</td><td>113310.00</td></tr>
+<tr><td>brain_volume_ml</td><td>113.31</td></tr>
+<tr><td>csf_volume_ml</td><td>43.18</td></tr>
+<tr><td>gm_volume_ml</td><td>34.59</td></tr>
+<tr><td>wm_volume_ml</td><td>35.54</td></tr>
+<tr><td>csf_fraction</td><td>0.38</td></tr>
+<tr><td>gm_fraction</td><td>0.31</td></tr>
+<tr><td>wm_fraction</td><td>0.31</td></tr>
+<tr><td>snr_robust</td><td>23.69</td></tr>
+<tr><td>mean_brain_intensity</td><td>443.11</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

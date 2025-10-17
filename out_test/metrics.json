@@ -1,0 +1,24 @@
+{
+  "dimensions_xyz_vox": [
+    128,
+    128,
+    64
+  ],
+  "spacing_xyz_mm": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "voxel_volume_ml": 0.001,
+  "num_voxels_total": 1048576,
+  "num_voxels_brain": 113310,
+  "brain_volume_ml": 113.31,
+  "csf_volume_ml": 43.179,
+  "gm_volume_ml": 34.588,
+  "wm_volume_ml": 35.543,
+  "csf_fraction": 0.3810696319830553,
+  "gm_fraction": 0.3052510811049334,
+  "wm_fraction": 0.3136792869120113,
+  "snr_robust": 23.685510635375977,
+  "mean_brain_intensity": 443.105224609375
+}
